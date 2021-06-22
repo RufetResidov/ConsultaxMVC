@@ -40,7 +40,7 @@
                 @Html.DisplayFor(modelItem => item.Title)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.PhotoUrl)
+                <img src="@item.PhotoUrl" style="width:150px" alt="Alternate Text" />
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |

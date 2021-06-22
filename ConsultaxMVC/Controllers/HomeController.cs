@@ -1,6 +1,7 @@
 ﻿using ConsultaxMVC.Data;
 using ConsultaxMVC.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -26,7 +27,7 @@ namespace ConsultaxMVC.Controllers
             ViewData["project"] = _context.AllProjects.ToList();
             ViewData["service"] = _context.AllServices.ToList();
             ViewData["altSection"] = _context.AltSections.ToList();
-            ViewData["blog"] = _context.Blogs.ToList();
+            ViewData["blog"] = _context.Blogs.Include(x=>x.Category).ToList();
             ViewData["secOne"] = _context.SectionOnes.ToList();
             ViewData["testim"] = _context.Testimonials.ToList();
             ViewData["who"] = _context.whoWeAres.ToList();

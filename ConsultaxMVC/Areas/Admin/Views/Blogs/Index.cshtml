@@ -43,7 +43,7 @@
                 @Html.DisplayFor(modelItem => item.PublishDate)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.PhotoUrl)
+                <img src="@item.PhotoUrl" style="width:200px" alt="Alternate Text" />
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Category.ID)
