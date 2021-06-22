@@ -1,0 +1,524 @@
+﻿    <div id="content" class="site-content">
+		<section id="section-slider" class="fullwidthbanner-container" aria-label="section-slider">
+            <div id="revolution-slider">
+                <ul>
+                    @foreach (var secOne in ViewData["secOne"] as List<SectionOne>)
+                    {
+                        <li data-transition="fade" data-slotamount="10" data-masterspeed="default" data-thumb="">
+                            <!--  BACKGROUND IMAGE -->
+                            <img src="~/front/images/slide-home1.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" />
+                            <div class="tp-caption tp-resizeme" data-x="right" data-hoffset="['0']" data-y="bottom" data-voffset="" data-width="['auto','320','auto','320']" data-transform_idle="o:1;" data-transform_in="x:550px;opacity:0;s:800;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-responsive_offset="on">
+                                <img class="img-responsive md-hidden sm-hidden xs-hidden" src=" @secOne.PhotoUrl " alt="Image">
+                            </div>
+                            <div class="tp-caption tp-resizeme font-second text-second bolder" data-x="['left']" data-hoffset="['0','15','15','15']" data-y="top" data-voffset="200" data-width="['580','580','480','320']" data-transform_idle="o:1;" data-transform_in="x:100px;opacity:0;s:800;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1500" data-whitespace="['nowrap','nowrap','nowrap','normal']" data-fontsize="['14','14','14','14']" data-responsive_offset="on">
+                                <p>@secOne.SubHeader </p>
+                            </div>
+                            <div class="tp-caption tp-resizeme font-second text-second bolder" data-x="['left']" data-hoffset="['0','15','15','15']" data-y="center" data-voffset="['-45','-45','-45','-45']" data-width="['670','580','480','320']" data-transform_idle="o:1;" data-transform_in="x:100px;opacity:0;s:800;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1700" data-whitespace="['normal']" data-fontsize="['50','50','40','30']" data-lineheight="['60','60','50','40']" data-responsive_offset="on">
+                                <p>@secOne.Header </p>
+                            </div>
+                            <div class="tp-caption tp-resizeme sh3" data-x="['left']" data-hoffset="['0','15','15','15']" data-y="center" data-voffset="['60','60','60','60']" data-width="['580','580','480','300']" data-transform_idle="o:1;" data-whitespace="['normal','normal','normal','normal']" data-transform_in="x:100px;opacity:0;s:800;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1900" data-fontsize="['16','16','14','12']" data-lineheight="['24','24','18','16']" data-responsive_offset="on">
+                                <p>@secOne.Title </p>
+                            </div>
+                            <div class="tp-caption" data-x="['left']" data-hoffset="['0','15','15','15']" data-y="bottom" data-voffset="['185','185','185','185']" data-transform_idle="o:1;" data-transform_in="x:100px;opacity:0;s:800;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="2100">
+                                <a class="btn" href="#">GET QUOTE</a>
+                            </div>
+                        </li>
+
+                     }
+
+                </ul>
+            </div>
+        </section>
+
+        <section class="wpb_row row-fluid top-70 row-has-fill relative bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="wpb_column column_container col-sm-12">
+                        <div class="column-inner">
+                            <div class="wpb_wrapper">
+                                <div class="empty_space_70 lg-hidden"><span class="empty_space_inner"></span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    @foreach (var altSection in ViewData["altSection"] as List<AltSection>)
+                     {
+                            <div class="wpb_column column_container col-sm-6 col-md-3">
+                                <div class="column-inner">
+                                    <div class="wpb_wrapper">
+                                        <div class="service-box icon-box box-shadow-2 ionic ">
+                                            <i class="@altSection.Icon"></i>
+                                            <div class="content-box">
+                                                <h4>@altSection.Header</h4>
+                                                <p>@altSection.Title</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="empty_space_30  lg-hidden"><span class="empty_space_inner"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                     }
+                </div>
+            </div>
+        </section>
+        <section class="wpb_row row-fluid section-padd row-has-fill row-o-equal-height row-o-content-middle row-flex bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="wpb_column column_container col-sm-12">
+                        <div class="column-inner">
+                            <div class="wpb_wrapper">
+                                <div class="row wpb_row inner row-fluid row-o-equal-height row-o-content-middle row-flex">
+                                    <div class="wpb_column column_container col-sm-12 col-md-6 col-has-fill custom-padd-1">
+                                        <div class="column-inner">
+                                            <div class="wpb_wrapper"></div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-second wpb_column column_container col-sm-12 col-md-6">
+                                        <div class="column-inner">
+                                            <div class="wpb_wrapper">
+                                                <div class="empty_space_60 lg-hidden h60"><span class="empty_space_inner"></span></div>
+
+                                                <div class="section-head padding-box-2 text-light">
+                                                    <h6><span>WHO WE ARE</span></h6>
+                                                    <h2 class="section-title">Our Mission,<br>Values and Motto</h2>
+                                                </div>
+
+                                                <div class="wpb_text_column wpb_content_element padding-box-2 text-light">
+                                                    <div class="wpb_wrapper">
+                                                        <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a massive sandstorm slammed into the Chinese capital bringing the latest airpocalypse to this smog-choked city.</p>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="wpb_text_column wpb_content_element paddtop-75 padding-box-2 info-box text-light">
+                                                    <div class="wpb_wrapper">
+                                                        <div class="sign">
+                                                            <p><img class="alignnone size-full wp-image-1087" src="~/front/images/sign1.png" alt="" width="79" height="49"></p>
+                                                            <h5>James Patterson</h5>
+                                                            <p>Founder &amp; CEO
+                                                            </p>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="empty_space_60 lg-hidden"><span class="empty_space_inner"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="wpb_row row-fluid section-padd">
+            <div class="container">
+                <div class="row">
+                    <div class="wpb_column column_container col-sm-12 col-md-9">
+                        <div class="column-inner">
+                            <div class="wpb_wrapper">
+                                <div class="section-head ">
+                                    <h6><span>OUR SERVICES</span></h6>
+                                    <h2 class="section-title">What we bring to you</h2>
+                                </div>
+
+                                <div class="empty_space_30 md-hidden sm-hidden"><span class="empty_space_inner"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wpb_column column_container col-sm-12 col-md-3">
+                        <div class="column-inner">
+                            <div class="wpb_wrapper">
+                                <div class="wpb_text_column wpb_content_element text-right mobile-left">
+                                    <div class="wpb_wrapper">
+                                        <p><a class="pagelink gray" href="services.html">All services</a></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @foreach (var service in ViewData["service"] as List<AllService>)
+                    {
+                        <div class="wpb_column column_container col-sm-6 col-md-4 ">
+                            <div class="column-inner">
+                                <div class="wpb_wrapper">
+                                    <div class="service-box icon-box  ionic  hover-box">
+                                        <i class="@service.Icon"></i>
+                                        <div class="content-box">
+                                            <h4>@service.Header</h4>
+                                            <p>@service.Title</p>
+                                            <a class="link-box pagelink" href="service-detail.html" target="_self">Read more</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                     }
+
+                </div>
+            </div>
+        </section>
+        <section class="wpb_row row-fluid section-padd-top bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="wpb_column column_container col-sm-12 col-md-9">
+                        <div class="column-inner">
+                            <div class="wpb_wrapper">
+                                <div class="section-head ">
+                                    <h6><span>Our Projects</span></h6>
+                                    <h2 class="section-title">We are the leaders</h2>
+                                </div>
+
+                                <div class="empty_space_30 md-hidden sm-hidden"><span class="empty_space_inner"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wpb_column column_container col-sm-12 col-md-3">
+                        <div class="column-inner">
+                            <div class="wpb_wrapper">
+                                <div class="wpb_text_column wpb_content_element text-right mobile-left">
+                                    <div class="wpb_wrapper">
+                                        <p><a class="pagelink gray" href="projects.html">All projects</a></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="wpb_row row-fluid section-padd-bot row-has-fill row-full-width row-no-padding bg-light">
+            <div class="row">
+                <div class="wpb_column column_container col-sm-12">
+                    <div class="column-inner">
+                        <div class="wpb_wrapper">
+                            <div class="project-list-2">
+                                <div class="project-slider-2 projects" data-show="1" data-auto="" data-dot="true">
+
+                                    @foreach (var project in ViewData["project"] as List<AllProject>)
+                                    {
+                                        <div class="col-md-12">
+                                            <div class="project-item">
+
+                                                <div class="slide-img"><img src="@project.PhotoUrl " alt=""></div>
+
+                                                <div class="inner row">
+                                                    <div class="col-md-3">
+                                                        <img src="@project.Logo" alt="logo"> Contract Project: @project.ContractDate
+                                                        <div class="gaps lg-hidden"></div>
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <h4><a href="project-detail.html">Financial Report 2019</a></h4>
+                                                        <p>@project.Title</p>
+                                                        <a class="pagelink gray" href="project-detail.html">View details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                     }
+
+                                </div>
+                                <div class="container">
+                                    <div class="arrows-slick">
+                                        <button type="button" class="btn-left slick-arrow prev-nav"><i class="fa fa-angle-left"></i></button>
+                                        <button type="button" class="btn-right slick-arrow next-nav"><i class="fa fa-angle-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="wpb_row row-fluid section-padd bg-second row-has-fill">
+            <div class="container">
+                <div class="row">
+                    <div class="wpb_column column_container col-sm-6">
+                        <div class="column-inner">
+                            <div class="wpb_wrapper">
+                                <h2 class="custom_heading text-light">Request a Free<br>Call Back</h2>
+                                <div class="wpb_text_column wpb_content_element  text-light">
+                                    <div class="wpb_wrapper">
+                                        <p>Provide discussion information and we’ll get back to
+                                            <br> you as soon as possible</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wpb_column column_container col-sm-6">
+                        <div class="column-inner">
+                            <div class="wpb_wrapper">
+                                <div role="form" class="wpcf7" id="wpcf7-f1626-p1530-o1" lang="en-US" dir="ltr">
+                                    <div class="screen-reader-response"></div>
+                                    <form action="#" method="post" class="wpcf7-form">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                            	<span class="wpcf7-form-control-wrap your-name">
+	                                            	<input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" required="" aria-invalid="false" placeholder="Your Name">
+	                                            </span>
+                                            </div>
+                                            <div class="col-md-6">
+                                            	<span class="wpcf7-form-control-wrap your-service">
+                                            		<select name="your-service" class="wpcf7-form-control wpcf7-select" aria-invalid="false">
+                                            			<option value="Audit &amp; Assurance">Audit &amp; Assurance</option>
+                                            			<option value="Financial Consulting">Financial Consulting</option>
+                                            			<option value="Trades &amp; Stocks">Trades &amp; Stocks</option>
+                                            			<option value="Strategic Planning">Strategic Planning</option>
+                                            			<option value="Financial Projections">Financial Projections</option>
+                                            		</select>
+                                            	</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                            	<span class="wpcf7-form-control-wrap your-email">
+                                            		<input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required="" placeholder="Email Address">
+                                            	</span>
+                                            </div>
+                                            <div class="col-md-6">
+                                            	<span class="wpcf7-form-control-wrap your-phone">
+                                            		<input type="tel" name="your-phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" placeholder="Phone Number">
+                                            	</span>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <input type="submit" value="SUBMIT" class="wpcf7-form-control wpcf7-submit btn">
+                                        </p>
+                                        <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="wpb_row row-fluid section-padd bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="wpb_column column_container col-sm-12 col-md-9">
+                        <div class="column-inner">
+                            <div class="wpb_wrapper">
+                                <div class="section-head ">
+                                    <h6><span>our blog</span></h6>
+                                    <h2 class="section-title">Our latest news</h2>
+                                </div>
+
+                                <div class="empty_space_30 md-hidden sm-hidden"><span class="empty_space_inner"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wpb_column column_container col-sm-12 col-md-3">
+                        <div class="column-inner">
+                            <div class="wpb_wrapper">
+                                <div class="wpb_text_column wpb_content_element text-right mobile-left">
+                                    <div class="wpb_wrapper">
+                                        <p><a class="pagelink gray" href="blog.html">View all posts</a></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wpb_column column_container col-sm-12">
+                        <div class="column-inner">
+                            <div class="wpb_wrapper">
+                                <div class="news-slider posts-grid row" data-show="3" data-auto="true">
+
+                                    @foreach (var blog in ViewData["blog"] as List<Blog>)
+                                     {
+                                        <div>
+                                            <article class="news-item content-area">
+                                                <div class="inner-item radius-top">
+                                                    <div class="thumb-image">
+                                                        <a href="post.html">
+                                                            <img src="@blog.PhotoUrl" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="inner-post radius-bottom">
+                                                        <div class="entry-meta">
+                                                            <span class="posted-on">
+                                                                <time class="entry-date">@blog.PublishDate</time>
+                                                            </span>
+                                                            <span class="posted-in">
+                                                                <a href="#">@blog.CategoryID</a>
+                                                            </span>
+                                                        </div>
+                                                        <h4 class="entry-title">
+                                                            <a href="post.html">@blog.Header</a>
+                                                        </h4>
+                                                        <p>
+                                                            @blog.Title
+                                                        </p>
+                                                        <a class="post-link" href="post.html">Read more</a>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                     }
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="wpb_row row-fluid section-padd">
+            <div class="container">
+                <div class="row">
+                    <div class="wpb_column column_container col-sm-12">
+                        <div class="column-inner">
+                            <div class="wpb_wrapper">
+                                <div class="section-head ">
+                                    <h6><span>testimonial &amp; partner</span></h6>
+                                    <h2 class="section-title">What our clients says?</h2>
+                                </div>
+
+                                <div class="empty_space_30"><span class="empty_space_inner"></span></div>
+
+                                <div class="testi-slider" data-show="3" data-arrow="true">
+
+                                        @foreach (var testim in ViewData["testim"] as List<Testimonial>)
+                                         {
+
+                                            <div>
+                                                <div class="testi-item box-shadow-hover">
+                                                    <div class="testi-head">
+                                                        <img width="50" height="50" src=" @testim.PhotoUrl " class="client-img" alt="">
+                                                        <h5>@testim.Name<span class="font12 normal">@testim.FromCity</span></h5>
+                                                    </div>
+                                                    <div class="line"></div>
+                                                    <div class="testi-content">
+                                                        <i class="ion-md-quote"></i>
+                                                        <img src="~/front/images/stars.png" alt="">
+                                                        <p>@testim.Title</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                         }
+
+                                </div>
+
+                                <div class="empty_space_80"><span class="empty_space_inner"></span></div>
+
+                                <div class="partner-slider image-carousel text-center" data-show="5" data-arrow="false">
+
+                                    <div>
+							            <div class="partner-item text-center clearfix">
+							                <div class="inner">
+						                        <div class="thumb">
+						                            <img src="~/front/images/logo1.png" alt="">
+						                        </div>
+							                </div>
+							            </div>
+							        </div>
+
+							        <div>
+							            <div class="partner-item text-center clearfix">
+							                <div class="inner">
+						                        <div class="thumb">
+						                            <img src="~/front/images/logo2.png" alt="">
+						                        </div>
+							                </div>
+							            </div>
+							        </div>
+
+							        <div>
+							            <div class="partner-item text-center clearfix">
+							                <div class="inner">
+						                        <div class="thumb">
+						                            <img src="~/front/images/logo3.png" alt="">
+						                        </div>
+							                </div>
+							            </div>
+							        </div>
+
+							        <div>
+							            <div class="partner-item text-center clearfix">
+							                <div class="inner">
+						                        <div class="thumb">
+						                            <img src="~/front/images/logo4.png" alt="">
+						                        </div>
+							                </div>
+							            </div>
+							        </div>
+
+							        <div>
+							            <div class="partner-item text-center clearfix">
+							                <div class="inner">
+						                        <div class="thumb">
+						                            <img src="~/front/images/logo5.png" alt="">
+						                        </div>
+							                </div>
+							            </div>
+							        </div>
+
+							        <div>
+							            <div class="partner-item text-center clearfix">
+							                <div class="inner">
+						                        <div class="thumb">
+						                            <img src="~/front/images/logo1.png" alt="">
+						                        </div>
+							                </div>
+							            </div>
+							        </div>
+
+							        <div>
+							            <div class="partner-item text-center clearfix">
+							                <div class="inner">
+						                        <div class="thumb">
+						                            <img src="~/front/images/logo2.png" alt="">
+						                        </div>
+							                </div>
+							            </div>
+							        </div>
+
+							        <div>
+							            <div class="partner-item text-center clearfix">
+							                <div class="inner">
+						                        <div class="thumb">
+						                            <img src="~/front/images/logo3.png" alt="">
+						                        </div>
+							                </div>
+							            </div>
+							        </div>
+
+							        <div>
+							            <div class="partner-item text-center clearfix">
+							                <div class="inner">
+						                        <div class="thumb">
+						                            <img src="~/front/images/logo4.png" alt="">
+						                        </div>
+							                </div>
+							            </div>
+							        </div>
+
+							        <div>
+							            <div class="partner-item text-center clearfix">
+							                <div class="inner">
+						                        <div class="thumb">
+						                            <img src="~/front/images/logo5.png" alt="">
+						                        </div>
+							                </div>
+							            </div>
+							        </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <!-- #content -->
